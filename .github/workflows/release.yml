@@ -1,20 +1,14 @@
-name: Release Nextcloud to Charmhub
-
-# Triggered when changes happen in the operator-nextcloud subdirectory.
+name: Release Collabora Online to Charmhub
 
 on:
   push:
     branches:
-      - githubtests
-    paths: 
-      - 'operator-nextcloud/**'
+      - main
 
 jobs:
   build:
-    name: Build nextcloud charm
+    name: Build charm
     uses: canonical/data-platform-workflows/.github/workflows/build_charm_without_cache.yaml@fix-build-without-cache-monorepo
-    with:
-      path-to-charm-directory: operator-nextcloud
 
   release:
     name: Release charm
@@ -24,7 +18,6 @@ jobs:
     with:
       channel: latest/edge
       artifact-name: ${{ needs.build.outputs.artifact-name }}
-      path-to-charm-directory: operator-nextcloud
     secrets:
       charmhub-token: ${{ secrets.CHARMHUB_TOKEN }}
     permissions:
