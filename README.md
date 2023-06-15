@@ -34,3 +34,9 @@ The Collabora Office URL needs to be set in Nextcloud at `Settings -> Administra
 
 ## Other resources
 - [Read more](https://www.collaboraoffice.com/)
+
+## Attributions
+
+* Collabora Office
+* Canonical for Juju
+* All the amazing open source software that makes this madness possible.
