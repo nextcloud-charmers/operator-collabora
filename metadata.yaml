@@ -1,0 +1,17 @@
+# This file populates the Overview on Charmhub.
+# See https://juju.is/docs/sdk/metadata-reference for a checklist and guidance.
+
+# The charm package name, no spaces (required)
+# See https://juju.is/docs/sdk/naming#heading--naming-charms for guidance.
+name: collabora-online
+ 
+# The following metadata are human-readable and will be published prominently on Charmhub.
+
+# (Recommended)
+display-name: Collabora Online
+
+# (Required)
+summary: Installs Collabora Online (coolwsd) that can be used with Nextcloud.
+
+description: |
+  Installs Collabora online that can be used with e.g. Nextcloud.
